@@ -1,6 +1,8 @@
-.card {
-
+.card1{
+    display: flex;
+    
 }
+
 
 .card-img-top {
     width: 100%;
@@ -13,5 +15,10 @@
     width: 50%;
     height: 10px;
     object-fit: cover;
+
+}
+
+.card{
+    display: flex;
 
 }
