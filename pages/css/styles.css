@@ -1,6 +1,7 @@
 .car1{
     display: flex;
     justify-content: space-around;
+    
 
 
 }
@@ -10,6 +11,9 @@
     justify-content: space-around;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.card{
+    border: solid thin;
 }
 .home title {
     position: absolute;
@@ -33,4 +37,12 @@
     object-fit: cover;
 
 }
+.card_title1{
+color: white;
+}
+.add_to_cart {
+ padding: 0 0 60px 60px;
+ 
+}
+
 
