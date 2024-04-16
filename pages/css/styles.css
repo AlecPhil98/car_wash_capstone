@@ -41,8 +41,24 @@
 color: white;
 }
 .add_to_cart {
- padding: 0 0 60px 60px;
+    margin: auto;
+    padding: 0 0 30px;
+ 
  
 }
+.card-body{
+    margin: auto;
+}
+.list-group-item:nth-child(odd){
+    background-color: lightgray;
+
+}
+.home_title{
+
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
+
 
 
