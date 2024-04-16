@@ -1,9 +1,17 @@
-.card1{
+.car1{
     display: flex;
-    margin: auto;
-    
+    justify-content: space-around;
+
+
 }
-.h1 {
+.car2 {
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.home title {
     position: absolute;
     top: 50%;
     width: 100%;
