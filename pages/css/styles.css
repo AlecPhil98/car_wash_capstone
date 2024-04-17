@@ -21,6 +21,7 @@
     width: 100%;
     text-align: center;
     font-size: 18px;
+    
 }
 
 
@@ -56,9 +57,14 @@ color: white;
 .home_title{
 
     text-align: center;
-    margin: auto;
-    padding: 30px;
+    margin:auto ;
+    
+  
+  
 }
 
+.footer {
+   color: white;
+}
 
 
