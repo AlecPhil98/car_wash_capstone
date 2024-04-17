@@ -59,12 +59,18 @@ color: white;
     text-align: center;
     margin:auto ;
     
-  
-  
 }
 
 .footer {
    color: white;
+}
+
+.mainscreen{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    
 }
 
 
