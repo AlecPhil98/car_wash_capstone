@@ -1,17 +1,26 @@
 .car1{
     display: flex;
     justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 
 }
+
+
 .car2 {
 
     display: flex;
     justify-content: space-around;
     padding-top: 50px;
     padding-bottom: 50px;
+    
 }
 .card{
     border: solid thin;
+    
+    
+    
 }
 .home title {
     position: absolute;
@@ -80,5 +89,13 @@ color: white;
     padding-left: 15px;
     padding-bottom: 30px;
 }
+.carousel-item{
+
+    height: 500px;
+}
+
+
+
+
 
 
