@@ -1,4 +1,3 @@
-
 "use strict";
 
 const loginForm = document.querySelector("#loginButton");
