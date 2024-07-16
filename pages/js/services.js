@@ -45,7 +45,7 @@ function displayServiceCard(event) {
     cardImage.classList.add("card-img-top", "card-img-fit");
 
     //add the source to the images 
-    cardImage.src = `./images/${wash.img}`
+    cardImage.src = `./service_Images/${wash.img}`
     console.log(cardImage)
     cardImage.alt = wash.name;
 
