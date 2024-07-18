@@ -17,7 +17,16 @@ const servicePackages = [
         price: 50,
         services: 6,
         img: "Custom_Car_Wash.jpeg",
-        desc: "Deep cleaning and shining of wheels and tires to remove brake dust, road tar, and other contaminants, enhancing the overall aesthetic appeal of your classic car"
+        desc: "Deep cleaning and shining of wheels and tires to remove brake dust, road tar, and other contaminants, enhancing the overall aesthetic appeal of your classic car",
+        listItems: {
+            thing1: "test1",
+            thing2: "test2",
+            thing3: "test3",
+            thing4: "test4",
+            thing5: "test5",
+            thing6: "test6"
+
+        }
     },
     {
         name: "Ultimate Car Wash",
@@ -45,6 +54,7 @@ const servicePackages = [
         price: 845,
         services: 25,
         img: "Mega.jpg",
-        desc: "Includes all the services listed beforehand"
+        desc: "Includes all the services listed beforehand",
+        listItems:{}
     }
 ]

@@ -14,7 +14,6 @@ window.onload = () => {
 
 
 
-
 }
 
 
@@ -77,12 +76,22 @@ function displayServiceCard(event) {
     cardDiv.classList.add("list")
 
     listServices.innerHTML = `
-    <li class='list-group-item'>${wash.listItems.thing1}</li>
-    <li class='list-group-item'>${wash.listItems.thing2}</li>
-    <li class='list-group-item'>${wash.listItems.thing3}</li>
-     `
+    ${wash.listItems.thing1 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing1}</li>` : ''}
+    ${wash.listItems.thing2 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing2}</li>` : ''}
+    ${wash.listItems.thing3 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing3}</li>` : ''}
+    ${wash.listItems.thing4 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing4}</li>` : ''}
+    ${wash.listItems.thing5 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing5}</li>` : ''}
+    ${wash.listItems.thing6 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing6}</li>` : ''}
+    `
 
-     
+    let addCart = document.createElement("div")
+    cardDiv.classList.add("card-body")
+
+    addCart.innerHTML = `
+    <button type="button" class="btn btn-primary btn-lg">Add to cart</button>         
+    `
+
+
 
     // add the cardText to the cardBody
     cardBody.appendChild(cardText)
@@ -96,10 +105,19 @@ function displayServiceCard(event) {
 
     serviceDiv.appendChild(cardDiv)
 
+    cardDiv.appendChild(addCart)
+
 
 
 
 }
+
+
+
+
+
+
+
 
 function initServiceDropDown() {
     let serviceDropDown = document.querySelector("#serviceDropDown");
