@@ -160,20 +160,20 @@ function initServiceDropDown() {
 
     })
 
-  // Add event listener to dropdown to show/hide section based on selection
-  serviceDropDown.addEventListener("change", function () {
-    let showAll= document.querySelector("#showAll");
-    if (this.value === "show_all") {
-        showAll.classList.remove("hidden");
-    } else {
-        showAll.classList.add("hidden");
-    }
-});
+    // Add event listener to dropdown to show/hide section based on selection
+    serviceDropDown.addEventListener("change", function () {
+        let showAll = document.querySelector("#showAll");
+        if (this.value === "show_all") {
+            showAll.classList.remove("hidden");
+        } else {
+            showAll.classList.add("hidden");
+        }
+    });
 
 
 }
 
-  
+
 
 
 
