@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sercices page</title>
+    <title>Services page</title>
     <!----Include bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -59,7 +59,7 @@
     <!-- Hero Image -->
     <div class="container-fluid">
         <div class="heroImage">
-            <img src="servicesImages/heroImage1.png" alt="hero-image">
+            <img src="heroImage/heroImage1.png" alt="hero-image">
             <div class="center">
                 <h1>Wash Services</h1>
             </div>
@@ -71,6 +71,10 @@
             <div class="washHeaders">
                 <h3>All Wash Packages:</h3>
             </div>
+            <!-- dropdown for services page -->
+            <select class="form-select " name="serviceDropDown" id="serviceDropDown">
+
+            </select>
             <div class="packagesList">
                 <div>
                     <ul>
@@ -91,10 +95,6 @@
         </div>
     </div>
 
-    <!-- dropdown for services page -->
-    <select class="form-select " name="serviceDropdown" id="serviceDropDown">
-
-    </select>
 
     <!-- The div where the service should be displayed -->
     <div class="d-flex">
@@ -104,181 +104,188 @@
     </div>
 
 
-
-    <div class="card1">
-        <div class="car1">
-            <!-- Classic wash -->
-            <div class="card" style="width: 18rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAWc0Qvp2ImnO1Tl07HGaLb4W4ac2gkg8vu9kaw8VnVg&s"
-                    class="card-img-top" alt="classic car wash">
-                <div class="card-body bg-primary">
-                    <div class="card_title1">
-                        <h5 class="card-title">Classic Car Wash</h5>
-                        <p class="card-text">Gentle hand wash using premium automotive shampoos to lift dirt and
-                            contaminants without scratching the paint. Careful attention is given to intricate details
-                            and hard-to-reach areas.</p>
+    <section id="showAll" class="hidden">
+        <div class="card1">
+            <div class="car1">
+                <!-- Classic wash -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAWc0Qvp2ImnO1Tl07HGaLb4W4ac2gkg8vu9kaw8VnVg&s"
+                        class="card-img-top" alt="classic car wash">
+                    <div class="card-body bg-primary">
+                        <div class="card_title1">
+                            <h5 class="card-title">Classic Car Wash</h5>
+                            <p class="card-text">Gentle hand wash using premium automotive shampoos to lift dirt and
+                                contaminants without scratching the paint. Careful attention is given to intricate
+                                details
+                                and hard-to-reach areas.</p>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Clean</li>
+                        <li class="list-group-item">Dry</li>
+                        <li class="list-group-item">Wheel Clean</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="Learn More">Learn More</a>
+                    </div>
+                    <div class="add_to_cart">
+                        <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
                     </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Clean</li>
-                    <li class="list-group-item">Dry</li>
-                    <li class="list-group-item">Wheel Clean</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="Learn More">Learn More</a>
-                </div>
-                <div class="add_to_cart">
-                    <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
-                </div>
-            </div>
-            <!-- Cutom wash -->
-            <div class="card" style="width: 18rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmb91HH0bSwfKeCLWAfRM7NuhdHMvta4GK_DCoVOzKQ&s"
-                    class="card-img-top" alt="custom car wash">
-                <div class="card-body bg-primary">
-                    <div class="card_title1">
-                        <h5 class="card-title">Custom Car Wash</h5>
-                        <p class="card-text">Deep cleaning and shining of wheels and tires to remove brake dust, road
-                            tar, and other contaminants, enhancing the overall aesthetic appeal of your classic car.</p>
+                <!-- Cutom wash -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmb91HH0bSwfKeCLWAfRM7NuhdHMvta4GK_DCoVOzKQ&s"
+                        class="card-img-top" alt="custom car wash">
+                    <div class="card-body bg-primary">
+                        <div class="card_title1">
+                            <h5 class="card-title">Custom Car Wash</h5>
+                            <p class="card-text">Deep cleaning and shining of wheels and tires to remove brake dust,
+                                road
+                                tar, and other contaminants, enhancing the overall aesthetic appeal of your classic car.
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Clean</li>
+                        <li class="list-group-item">Dry</li>
+                        <li class="list-group-item">Wheel Clean</li>
+                        <li class="list-group-item">Underbody Clean</li>
+                        <li class="list-group-item">Paint Protectant</li>
+                        <li class="list-group-item">Spot Free Rinse</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="Learn More">Learn More</a>
+
+                    </div>
+                    <div class="add_to_cart">
+                        <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
                     </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Clean</li>
-                    <li class="list-group-item">Dry</li>
-                    <li class="list-group-item">Wheel Clean</li>
-                    <li class="list-group-item">Underbody Clean</li>
-                    <li class="list-group-item">Paint Protectant</li>
-                    <li class="list-group-item">Spot Free Rinse</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="Learn More">Learn More</a>
+                <!-- ultimate wash -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://ethoscarcare.com/cdn/shop/articles/ezgif.com-gif-maker.jpg?v=1648440829"
+                        class="card-img-top" alt="Ultimate Car Wash">
+                    <div class="card-body bg-primary">
+                        <div class="card_title1">
+                            <h5 class="card-title">Ultimate Car Wash</h5>
+                            <p class="card-text">Protective Coatings: Application of high-quality sealants and waxes to
+                                provide long-lasting protection against UV rays, pollutants, and environmental hazards,
+                                preserving the beauty and value of your classic vehicle for years to come.</p>
+                        </div>
 
-                </div>
-                <div class="add_to_cart">
-                    <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
-                </div>
-            </div>
-            <!-- ultimate wash -->
-            <div class="card" style="width: 18rem;">
-                <img src="https://ethoscarcare.com/cdn/shop/articles/ezgif.com-gif-maker.jpg?v=1648440829"
-                    class="card-img-top" alt="Ultimate Car Wash">
-                <div class="card-body bg-primary">
-                    <div class="card_title1">
-                        <h5 class="card-title">Ultimate Car Wash</h5>
-                        <p class="card-text">Protective Coatings: Application of high-quality sealants and waxes to
-                            provide long-lasting protection against UV rays, pollutants, and environmental hazards,
-                            preserving the beauty and value of your classic vehicle for years to come.</p>
                     </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Clean</li>
+                        <li class="list-group-item">Dry</li>
+                        <li class="list-group-item">Wheel Clean</li>
+                        <li class="list-group-item">Underbody Clean</li>
+                        <li class="list-group-item">Paint Protectant</li>
+                        <li class="list-group-item">Spot Free Rinse</li>
+                        <li class="list-group-item">Triple Foam Brush</li>
+                        <li class="list-group-item">Rain Gaurd</li>
+                        <li class="list-group-item">Wax</li>
+                        <li class="list-group-item">Tire Shine</li>
+                        <li class="list-group-item">Tripple Shine Wax</li>
+                        <li class="list-group-item">Ceramic Coating</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="Learn More">Learn More</a>
 
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Clean</li>
-                    <li class="list-group-item">Dry</li>
-                    <li class="list-group-item">Wheel Clean</li>
-                    <li class="list-group-item">Underbody Clean</li>
-                    <li class="list-group-item">Paint Protectant</li>
-                    <li class="list-group-item">Spot Free Rinse</li>
-                    <li class="list-group-item">Triple Foam Brush</li>
-                    <li class="list-group-item">Rain Gaurd</li>
-                    <li class="list-group-item">Wax</li>
-                    <li class="list-group-item">Tire Shine</li>
-                    <li class="list-group-item">Tripple Shine Wax</li>
-                    <li class="list-group-item">Ceramic Coating</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="Learn More">Learn More</a>
-
-                </div>
-                <div class="add_to_cart">
-                    <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
+                    </div>
+                    <div class="add_to_cart">
+                        <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
+                    </div>
                 </div>
             </div>
+            <div class="car2">
+                <!-- Paint correction -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://zappysautowashes.com/cdn/shop/articles/bee_1200x1200.jpg?v=1670437834"
+                        class="card-img-top" alt="Paint Correction">
+                    <div class="card-body bg-primary">
+                        <div class="card_title1">
+                            <h5 class="card-title">Paint Correction</h5>
+                            <p class="card-text">Paint Correction: Professional polishing and buffing to restore the
+                                luster
+                                and shine of your classic car's paintwork, removing swirl marks, scratches, and
+                                oxidation
+                                for a flawless finish.</p>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Correction Polish</li>
+                        <li class="list-group-item">removing minor scratches</li>
+                        <li class="list-group-item">swirl marks</li>
+                        <li class="list-group-item">water spots</li>
+                        <li class="list-group-item">Fading</li>
+                        <li class="list-group-item">other imperfections</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="Learn More">Learn More</a>
+
+                    </div>
+                    <div class="add_to_cart">
+                        <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
+                    </div>
+                </div>
+                <!-- Intertior Clean -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://s23226.pcdn.co/wp-content/uploads/2020/04/ChrisRiley-SteamCleaning.jpg"
+                        class="card-img-top" alt="Intertior Clean">
+                    <div class="card-body bg-primary">
+                        <div class="card_title1">
+                            <h5 class="card-title">Intertior Clean</h5>
+                            <p class="card-text">Interior Detailing: Thorough cleaning and conditioning of the interior
+                                surfaces, including upholstery, carpets, dashboard, and trim, to rejuvenate and protect
+                                against wear and tear.</p>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Complete Interior Vacuum</li>
+                        <li class="list-group-item">
+                            Heated Shampooing of Carpets, Seat Upholstery, and Floor Mats</li>
+                        <li class="list-group-item">Interior Plastic / Vinyl Cleaned and Dressed</li>
+                        <li class="list-group-item">Leather Cleaned and Conditioned</li>
+                        <li class="list-group-item">Cleaning of all Mirrors and Windows</li>
+                        <li class="list-group-item">
+                            Wipe and Degrease Door Jambs</li>
+                        <li class="list-group-item">Interior Air Freshener</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="Learn More">Learn More</a>
+
+                    </div>
+                    <div class="add_to_cart">
+                        <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
+                    </div>
+                </div>
+                <!-- Mega wash -->
+                <div class="card " style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1611239179213-d972da54091a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FyJTIwd2FzaHxlbnwwfHwwfHx8MA%3D%3D"
+                        class="card-img-top" alt="Mega Wash">
+                    <div class="card-body bg-primary">
+                        <div class="card_title1">
+                            <h5 class="card-title">Mega Wash</h5>
+                            <p class="card-text">Includes all the services listed beforehand.</p>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Includes all the service items</li>
+
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="Learn More">Learn More</a>
+
+                    </div>
+                    <div class="add_to_cart">
+                        <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="car2">
-            <!-- Paint correction -->
-            <div class="card" style="width: 18rem;">
-                <img src="https://zappysautowashes.com/cdn/shop/articles/bee_1200x1200.jpg?v=1670437834"
-                    class="card-img-top" alt="Paint Correction">
-                <div class="card-body bg-primary">
-                    <div class="card_title1">
-                        <h5 class="card-title">Paint Correction</h5>
-                        <p class="card-text">Paint Correction: Professional polishing and buffing to restore the luster
-                            and shine of your classic car's paintwork, removing swirl marks, scratches, and oxidation
-                            for a flawless finish.</p>
-                    </div>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Correction Polish</li>
-                    <li class="list-group-item">removing minor scratches</li>
-                    <li class="list-group-item">swirl marks</li>
-                    <li class="list-group-item">water spots</li>
-                    <li class="list-group-item">Fading</li>
-                    <li class="list-group-item">other imperfections</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="Learn More">Learn More</a>
+    </section>
 
-                </div>
-                <div class="add_to_cart">
-                    <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
-                </div>
-            </div>
-            <!-- Intertior Clean -->
-            <div class="card" style="width: 18rem;">
-                <img src="https://s23226.pcdn.co/wp-content/uploads/2020/04/ChrisRiley-SteamCleaning.jpg"
-                    class="card-img-top" alt="Intertior Clean">
-                <div class="card-body bg-primary">
-                    <div class="card_title1">
-                        <h5 class="card-title">Intertior Clean</h5>
-                        <p class="card-text">Interior Detailing: Thorough cleaning and conditioning of the interior
-                            surfaces, including upholstery, carpets, dashboard, and trim, to rejuvenate and protect
-                            against wear and tear.</p>
-                    </div>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Complete Interior Vacuum</li>
-                    <li class="list-group-item">
-                        Heated Shampooing of Carpets, Seat Upholstery, and Floor Mats</li>
-                    <li class="list-group-item">Interior Plastic / Vinyl Cleaned and Dressed</li>
-                    <li class="list-group-item">Leather Cleaned and Conditioned</li>
-                    <li class="list-group-item">Cleaning of all Mirrors and Windows</li>
-                    <li class="list-group-item">
-                        Wipe and Degrease Door Jambs</li>
-                    <li class="list-group-item">Interior Air Freshener</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="Learn More">Learn More</a>
-
-                </div>
-                <div class="add_to_cart">
-                    <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
-                </div>
-            </div>
-            <!-- Mega wash -->
-            <div class="card " style="width: 18rem;">
-                <img src="https://images.unsplash.com/photo-1611239179213-d972da54091a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FyJTIwd2FzaHxlbnwwfHwwfHx8MA%3D%3D"
-                    class="card-img-top" alt="Mega Wash">
-                <div class="card-body bg-primary">
-                    <div class="card_title1">
-                        <h5 class="card-title">Mega Wash</h5>
-                        <p class="card-text">Includes all the services listed beforehand.</p>
-                    </div>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Includes all the service items</li>
-
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="Learn More">Learn More</a>
-
-                </div>
-                <div class="add_to_cart">
-                    <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
 
     <!--Includeing bootstap javascript file-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
