@@ -1,3 +1,60 @@
+
+.navbar {
+  background-color: #0077be;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.logo .car {
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.8;
+  animation: float 4s infinite;
+}
+@keyframes float {
+  0% {
+      transform: translateY(0);
+      opacity: 0.8;
+  }
+  100% {
+      transform: translateY(-20px);
+      opacity: 0.2;
+  }
+}
+.bubble-1 {
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: 100px;
+}
+.bubble-2 {
+  width: 15px;
+  height: 15px;
+  top: 15px;
+  left: 110px;
+}
+.bubble-3 {
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 130px;
+}
+
+
+
+
 .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
