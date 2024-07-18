@@ -82,6 +82,13 @@ function displayServiceCard(event) {
     ${wash.listItems.thing4 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing4}</li>` : ''}
     ${wash.listItems.thing5 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing5}</li>` : ''}
     ${wash.listItems.thing6 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing6}</li>` : ''}
+    ${wash.listItems.thing7 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing7}</li>` : ''}
+    ${wash.listItems.thing8 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing8}</li>` : ''}
+    ${wash.listItems.thing9 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing9}</li>` : ''}
+    ${wash.listItems.thing10 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing10}</li>` : ''}
+    ${wash.listItems.thing11 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing11}</li>` : ''}
+    ${wash.listItems.thing11 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing12}</li>` : ''}
+    
     `
 
     let addCart = document.createElement("div")
