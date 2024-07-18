@@ -13,7 +13,6 @@ window.onload = () => {
     serviceDropDown.addEventListener("change", displayServiceCard)
 
 
-    ShowHideAllCards.addEventListener("change", hideShowRadioDog)
 
 }
 
@@ -137,6 +136,13 @@ function initServiceDropDown() {
     // add the option we created to the dropdown
     serviceDropDown.appendChild(defaultOption);
 
+    // Create the element for the "Show All" option
+    let showAllOption = document.createElement("option");
+    showAllOption.value = "show_all";
+    showAllOption.textContent = "Show All";
+    serviceDropDown.appendChild(showAllOption);
+
+
     // write a loop to work with each indivduial category and build an option for it 
     servicePackages.forEach((wash) => {
 
@@ -153,23 +159,21 @@ function initServiceDropDown() {
 
 
     })
-    // Create the element for the "Show All" option
-    let showAllOption = document.createElement("option");
-    showAllOption.value = "show_all";
-    showAllOption.textContent = "Show All";
-    serviceDropDown.appendChild(showAllOption);
 
-
+  // Add event listener to dropdown to show/hide section based on selection
+  serviceDropDown.addEventListener("change", function () {
+    let showAll= document.querySelector("#showAll");
+    if (this.value === "show_all") {
+        showAll.classList.remove("hidden");
+    } else {
+        showAll.classList.add("hidden");
+    }
+});
 
 
 }
 
-// Add event listener to dropdown to show/hide section based on selection
-serviceDropDown.addEventListener("change", function() {
-    let serviceSection = document.querySelector("#serviceSection");
-    if (this.value === "" || this.value === "show_all") {
-        serviceSection.classList.add("hidden");
-    } else {
-        serviceSection.classList.remove("hidden");
-    }
-});
+  
+
+
+
