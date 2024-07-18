@@ -98,7 +98,7 @@ function displayServiceCard(event) {
 
     addCart.innerHTML = `
     
-        <button type="button" class="btn btn-primary btn-lg" id="newBtn">Add to cart</button>
+        <a href="checkout2.html" class="btn btn-primary active" tabindex="-1" role="button" id="newBtn">Add to Cart</a>
            
     `
 
