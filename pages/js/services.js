@@ -14,7 +14,7 @@ window.onload = () => {
 
 
 
-   
+
 }
 
 
@@ -35,7 +35,7 @@ function displayServiceCard(event) {
     let cardDiv = document.createElement("div");
     cardDiv.classList.add("card", "w-25");
 
-    // creates the timag and set it properties 
+    // creates the image and set it properties 
     let cardImage = document.createElement("img");
     cardImage.classList.add("card-img-top", "card-img-fit");
 
@@ -49,11 +49,11 @@ function displayServiceCard(event) {
 
     // create the card body and add its classes 
     let cardBody = document.createElement("div");
-    cardBody.classList.add("card-body");
+    cardBody.classList.add("card-body", "bg-primary");
 
     // lets create the card title 
     let cardTitle = document.createElement("h5");
-    cardTitle.classList.add("card-title");
+    cardTitle.classList.add("card-title",);
 
     cardTitle.innerHTML = wash.name;
 
@@ -67,13 +67,35 @@ function displayServiceCard(event) {
     cardText.innerHTML = `
     ${wash.desc} 
     `
+
+    let priceText = document.createElement("p2");
+    cardTitle.classList.add("card-text");
+
+    priceText.innerHTML = `Price of service is $${wash.price}`
+
+    let listServices = document.createElement("div")
+    cardDiv.classList.add("list")
+
+    listServices.innerHTML = `
+    <li class='list-group-item'>${wash.listItems.thing1}</li>
+    <li class='list-group-item'>${wash.listItems.thing2}</li>
+    <li class='list-group-item'>${wash.listItems.thing3}</li>
+     `
+
+     
+
     // add the cardText to the cardBody
     cardBody.appendChild(cardText)
+
+    cardBody.appendChild(priceText)
 
     // add the card body to card div 
     cardDiv.appendChild(cardBody)
 
+    cardDiv.appendChild(listServices)
+
     serviceDiv.appendChild(cardDiv)
+
 
 
 
