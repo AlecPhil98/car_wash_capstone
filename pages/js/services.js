@@ -13,6 +13,7 @@ window.onload = () => {
     serviceDropDown.addEventListener("change", displayServiceCard)
 
 
+    ShowHideAllCards.addEventListener("change", hideShowRadioDog)
 
 }
 
@@ -66,15 +67,17 @@ function displayServiceCard(event) {
     cardText.innerHTML = `
     ${wash.desc} 
     `
-
+    // Creates adnd shows the price of service 
     let priceText = document.createElement("p2");
     cardTitle.classList.add("card-text");
 
     priceText.innerHTML = `Price of service is $${wash.price}`
 
+    // creates the list items
     let listServices = document.createElement("div")
     cardDiv.classList.add("list")
 
+    // shows the lsit items in the card if the item is undefined it is hidden 
     listServices.innerHTML = `
     ${wash.listItems.thing1 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing1}</li>` : ''}
     ${wash.listItems.thing2 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing2}</li>` : ''}
@@ -90,7 +93,7 @@ function displayServiceCard(event) {
     ${wash.listItems.thing11 !== undefined ? `<li class='list-group-item'>${wash.listItems.thing12}</li>` : ''}
     
     `
-
+    // button added to card 
     let addCart = document.createElement("div")
     cardDiv.classList.add("card-body")
 
@@ -100,9 +103,9 @@ function displayServiceCard(event) {
 
 
 
-    // add the cardText to the cardBody
+    // Creates the description to the card
     cardBody.appendChild(cardText)
-
+    // Creates the price tag 
     cardBody.appendChild(priceText)
 
     // add the card body to card div 
@@ -116,13 +119,7 @@ function displayServiceCard(event) {
 
 
 
-
 }
-
-
-
-
-
 
 
 
@@ -156,6 +153,23 @@ function initServiceDropDown() {
 
 
     })
+    // Create the element for the "Show All" option
+    let showAllOption = document.createElement("option");
+    showAllOption.value = "show_all";
+    showAllOption.textContent = "Show All";
+    serviceDropDown.appendChild(showAllOption);
+
+
 
 
 }
+
+// Add event listener to dropdown to show/hide section based on selection
+serviceDropDown.addEventListener("change", function() {
+    let serviceSection = document.querySelector("#serviceSection");
+    if (this.value === "" || this.value === "show_all") {
+        serviceSection.classList.add("hidden");
+    } else {
+        serviceSection.classList.remove("hidden");
+    }
+});
