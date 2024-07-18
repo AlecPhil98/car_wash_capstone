@@ -97,7 +97,9 @@ function displayServiceCard(event) {
     cardDiv.classList.add("card-body")
 
     addCart.innerHTML = `
-    <button type="button" class="btn btn-primary btn-lg">Add to cart</button>         
+    
+        <a href="checkout2.html" class="btn btn-primary active" tabindex="-1" role="button" id="newBtn">Add to Cart</a>
+           
     `
 
 
